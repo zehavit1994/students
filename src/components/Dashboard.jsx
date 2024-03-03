@@ -13,8 +13,6 @@ export default ({ students }) => {
           <th>University</th>
           <th>Average grade</th>
         </tr>
-      </table>
-      <table>
         {students.map((student) => (
           <Student key={student.id} student={student} />
         ))}
