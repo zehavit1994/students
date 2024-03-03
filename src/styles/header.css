@@ -1,0 +1,10 @@
+.header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2vmin 0;
+    font-size: 4vmin;
+    
+}
