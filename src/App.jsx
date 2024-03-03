@@ -11,10 +11,15 @@ export default () => {
   return (
     <>
       <Header />
-      <Dashboard students={students} />
+      <Dashboard
+        students={students}
+        removeStudent={(id) => {
+          setStudents(students.filter((s) => s.id !== id));
+        }}
+      />
       <AddStudent
         addStudent={(student) => {
-          student.id = Math.max(students.map(s => s.id)) + 1
+          student.id = Math.max(students.map((s) => s.id)) + 1;
           setStudents([...students, student]);
         }}
       />
