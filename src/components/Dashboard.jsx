@@ -34,7 +34,7 @@ const Student = ({ student, removeStudent }) => {
       <td>{student.major}</td>
       <td>{student.university}</td>
       <td>{student.averageGrade}</td>
-      <td>
+      <td className="action-col">
         <button onClick={() => removeStudent(student.id)}>-</button>
       </td>
     </tr>

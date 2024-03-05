@@ -43,3 +43,8 @@
 .dashboard tr:hover {
   background-color: #ddd;
 }
+
+.action-col{
+  display: flex;
+  justify-content: center;
+}
