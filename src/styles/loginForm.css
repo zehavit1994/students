@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ddd;
+    gap: 3vmin;
+    padding: 10vmin 0;
+    border-color: rgb(249, 249, 249);
+    border-radius: 5vmin;
+    border-style: solid;
+    border-width: 0.5vmin;
+    width: 60vmin;
+  }
+  
+  .container span:first-child {
+    font-size: 8vmin;
+    margin-bottom: 5vmin;
+    font-weight: bolder;
+    color: #04aa6d;
+    background: none;
+  }
+  
+  .container input {
+    padding: 1vmin;
+    border-radius: 1vmin;
+    background-color: rgb(15, 15, 15);
+    width: 75%;
+    color: rgb(249, 249, 249);
+  }
+  
+  .container button {
+    background: rgb(249, 249, 249);
+    padding: 1vmin 0;
+    border-radius: 1vmin;
+    font-weight: bold;
+    font-size: 2.5vmin;
+    cursor: pointer;
+    width: 75%;
+  }
+  
+  .container a {
+    background: none;
+    display: flex;
+    margin-right: 7vmin;
+    color: rgb(15, 15, 15);
+  
+  }
+  

@@ -1,29 +1,18 @@
-import React, { useState } from "react";
-import Header from "./components/Header";
-import Dashboard from "./components/Dashboard";
-import Footer from "./components/Footer";
-import studentsData from "./data/students";
-import "./App.css";
-import AddStudent from "./components/AddStudent";
+import React from 'react'
+import './App.css'
+import Home from './components/Home'
+import RegisterForm from './components/RegisterForm'
+import LoginForm from './components/LoginForm'
 
-export default () => {
-  const [students, setStudents] = useState(studentsData);
-  return (
-    <>
-      <Header />
-      <Dashboard
-        students={students}
-        removeStudent={(id) => {
-          setStudents(students.filter((s) => s.id !== id));
-        }}
-      />
-      <AddStudent
-        addStudent={(student) => {
-          student.id = Math.max(students.map((s) => s.id)) + 1;
-          setStudents([...students, student]);
-        }}
-      />
-      <Footer />
-    </>
-  );
-};
+function App() {
+  switch (window.location.pathname) {
+    case "/register":
+      return <RegisterForm/> 
+    case "/home":
+      return <Home/>
+    default:
+      return <LoginForm/>
+  }
+}
+
+export default App

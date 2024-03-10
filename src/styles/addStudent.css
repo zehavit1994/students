@@ -1,7 +1,6 @@
-.add-student{
-    margin: 0 10vmin 3vmin 10vmin;
-    display: flex;
-    gap: 2vmin;
-    font-size: 2.5vmin
+.add-student {
+  margin: 0 10vmin 3vmin 10vmin;
+  display: flex;
+  gap: 2vmin;
+  font-size: 2.5vmin;
 }
-
