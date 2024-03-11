@@ -5,11 +5,12 @@ import RegisterForm from './components/RegisterForm'
 import LoginForm from './components/LoginForm'
 
 function App() {
+  if (localStorage.getItem("username")) {
+    return <Home/>
+  }
   switch (window.location.pathname) {
     case "/register":
       return <RegisterForm/> 
-    case "/home":
-      return <Home/>
     default:
       return <LoginForm/>
   }

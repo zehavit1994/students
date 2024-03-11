@@ -5,14 +5,14 @@ export default (prop) => {
   return (
     <div className="container">
       <span>Login</span>
-      <input type="text" placeholder="User name" />
-      <input type="password" placeholder="password" />
-      <button>Submit</button>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button onClick={()=>localStorage.setItem("username", username)}>Submit</button>
       <div>
         <a href="#">Forgot Password</a>
         <span
           onClick={() => {
-            window.location.pathname = "/register";
+            location.pathname = "/register";
           }}
         >
           Signup

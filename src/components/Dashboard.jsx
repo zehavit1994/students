@@ -4,6 +4,7 @@ import "../styles/dashboard.css";
 export default (props) => {
   return (
     <div className="dashboard">
+      <span>Hello, {localStorage.getItem("username")}</span>
       <span>Students List</span>
       <table>
         <tr>
