@@ -7,7 +7,9 @@ export default (prop) => {
       <span>Login</span>
       <input type="text" placeholder="Username" />
       <input type="password" placeholder="Password" />
-      <button onClick={()=>localStorage.setItem("username", username)}>Submit</button>
+      <button onClick={() => localStorage.setItem("username", username)}>
+        Submit
+      </button>
       <div>
         <a href="#">Forgot Password</a>
         <span
@@ -15,7 +17,7 @@ export default (prop) => {
             location.pathname = "/register";
           }}
         >
-          Signup
+          register
         </span>
       </div>
     </div>

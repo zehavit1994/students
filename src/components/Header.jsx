@@ -5,6 +5,13 @@ export default () => {
   return (
     <div className="header">
       <span>Students</span>
+      <button
+        onClick={() => {
+          localStorage.removeItem("username");
+        }}
+      >
+        Logout
+      </button>
     </div>
   );
 };
